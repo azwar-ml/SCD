@@ -1,0 +1,42 @@
+import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-slate-900 text-white font-sans">
+      
+      {/* 1st part */}
+      <div className="flex justify-between items-center px-20 py-6">
+        <h1 className="text-xl font-bold">NEXT JS</h1>
+        <button className="bg-blue-500 text-white px-6 py-2 rounded-full"> Cv  </button>
+      </div>
+
+      {/* 2nd part */}
+      <div className="flex flex-col items-center text-center mt-10 px-4">
+        <h1 className="text-5xl font-bold text-blue-200">John Wick</h1>
+        <h2 className="text-2xl font-semibold mt-2">Actor and Artist</h2>
+        
+        <p className="max-w-lg mt-5 text-gray-300">
+          John Wick is a 2014 American neo-noir action thriller film directed by Chad
+          Stahelski (in his directorial debut) from a screenplay by Derek Kolstad.
+        </p>
+
+        {/* Icons */}
+        <div className="flex gap-8 mt-8">
+          <div className="bg-white text-black p-2 rounded"><FaFacebookF /></div>
+          <div className="bg-white text-black p-2 rounded"><FaYoutube /></div>
+          <div className="bg-white text-black p-2 rounded"><FaLinkedinIn /></div>
+        </div>
+
+        {/* Image */}
+        <div className="mt-10 mb-10">
+           <img 
+             src="/download.jfif" 
+             alt="Profile" 
+             className="w-48 h-48 rounded-full" 
+           />
+        </div>
+      </div>
+
+    </div>
+  );
+}

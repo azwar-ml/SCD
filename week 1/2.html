@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { background: red; margin: 0; font-family: sans-serif; }
+        .container { width: 80%; margin: auto; background: white; }
+        
+        /* Header */
+        header { display: flex; height: 150px; align-items: center; }
+        .logo { width: 20%; text-align: center; font-weight: bold; font-size: 24px; }
+        
+        /* BANNER AS BACKGROUND */
+        .banner { 
+            width: 80%; 
+            height: 100%;
+            
+            /* This sets your image as the background */
+            background-image: url('download.jpg'); 
+            
+            /* This ensures the image covers the whole box without repeating */
+            background-size: cover; 
+            
+            /* This keeps the image centered */
+            background-position: center;
+        }
+
+        /* Navigation */
+        nav { background: black; padding: 15px; }
+        nav a { color: white; font-weight: bold; margin-right: 30px; text-decoration: none; }
+
+        /* Layout */
+        .main { display: flex; height: 400px; color: white; }
+        .left { background: green; width: 30%; padding: 10px; }
+        .right { background: orange; width: 70%; padding: 10px; }
+        footer { background: blue; color: white; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">azwar</div>
+            
+            <div class="banner"></div>
+            
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="main">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
+        </div>
+
+        <footer>Footer Section</footer>
+    </div>
+
+</body>
+</html>

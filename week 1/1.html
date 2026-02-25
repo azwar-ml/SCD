@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Layout</title>
+    <style>
+        /* Reset default browser spacing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* The red background visible on the far left and right */
+        body {
+            background-color: red;
+            font-family: Arial, sans-serif;
+        }
+
+        /* The main container that holds the website content in the center */
+        .container {
+            width: 80%;       /* Adjust width as needed (e.g. 960px or 80%) */
+            margin: 0 auto;   /* Centers the container horizontally */
+            background-color: white;
+        }
+
+        /* HEADER SECTION (Inside your yellow circle) */
+        header {
+            display: flex;
+            align-items: center; /* Vertically centers the items */
+            background-color: white;
+            height: 150px; /* Adjust based on your actual image height */
+            padding: 10px;
+        }
+
+        .logo-area {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .banner-area {
+            width: 80%;
+            height: 100%;
+            background-color: #add8e6; /* Placeholder color for banner image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* MAIN CONTENT SECTION (Green and Orange areas) */
+        .main-content {
+            display: flex; /* Makes the sidebar and content sit side-by-side */
+            height: 400px; /* Fixed height for demonstration */
+        }
+
+        .sidebar-left {
+            background-color: #008000; /* Green */
+            width: 30%;
+            padding: 10px;
+            color: white;
+        }
+
+        .content-right {
+            background-color: #ffaa33; /* Orange */
+            width: 70%;
+            padding: 10px;
+            color: white;
+        }
+
+        /* FOOTER SECTION */
+        footer {
+            background-color: blue;
+            color: white;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                shopp.my
+            </div>
+            
+            <div class="banner-area">
+                ONLINE SHOPPING BANNER IMAGE
+            </div>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="main-content">
+            <aside class="sidebar-left">
+                left
+            </aside>
+            <main class="content-right">
+                right
+            </main>
+        </div>
+
+        <footer>
+            Footer Section
+        </footer>
+    </div>
+
+</body>
+</html>
